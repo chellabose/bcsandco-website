@@ -25,6 +25,9 @@
        EDIT-ADDRESS  office address
        EDIT-HOURS    office hours
   3. After every change, change the date marked EDIT-UPDATED in the footer.
+  3a. The three photographs are free stock pictures that load from Unsplash. Each has a note above it naming the picture.
+      The firm's own photographs (office, partners) can take their place: put the picture file in this repository
+      and write its file name after src= (and remove the srcset= lines).
   4. Keep the wording factual. No slogans, no comparisons with other firms, no client names, no fees.
 -->
 
@@ -150,8 +153,15 @@ a:hover { color: var(--ink); }
 .portal-groups h3 { font-size: 1.1rem; margin-bottom: 10px; }
 .portal-groups ul { margin: 0; padding: 0; list-style: none; display: grid; gap: 7px; }
 
+/* Photographs */
+.photo-band { border-top: 1px solid var(--rule); background: var(--sheet); }
+.photo-band img { display: block; width: 100%; height: clamp(200px, 30vw, 400px); object-fit: cover; }
+.inset-photo { display: block; width: 100%; height: auto; aspect-ratio: 3 / 2; object-fit: cover; border-radius: 3px; background: var(--sheet); }
+.wide-photo { display: block; width: 100%; height: clamp(180px, 26vw, 320px); object-fit: cover; object-position: center 62%; border-radius: 3px; margin-bottom: 34px; background: var(--sheet); }
+
 /* Careers */
 .prose { display: grid; gap: 14px; max-width: 40em; }
+.careers-grid { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 520px); gap: 32px clamp(30px, 5vw, 72px); align-items: center; }
 
 /* Contact */
 .contact-grid { display: grid; grid-template-columns: minmax(0, 5fr) minmax(0, 6fr); gap: 44px clamp(30px, 5vw, 72px); align-items: start; }
@@ -177,7 +187,7 @@ textarea { min-height: 130px; resize: vertical; }
 
 /* Narrow screens */
 @media (max-width: 860px) {
-  .hero-grid, .partners, .contact-grid { grid-template-columns: minmax(0, 1fr); }
+  .hero-grid, .partners, .contact-grid, .careers-grid { grid-template-columns: minmax(0, 1fr); }
 }
 @media (max-width: 760px) {
   .menu-button { display: inline-flex; }
@@ -269,6 +279,19 @@ textarea { min-height: 130px; resize: vertical; }
     </div>
   </div>
 </section>
+
+<!-- ============ PHOTOGRAPH: DESK ============ -->
+<!-- "Desk with calculator, charts, and binders" by Cht Gsml, from Unsplash (free licence). The picture loads from Unsplash.
+     To use another picture, change the addresses after src= and srcset=, and the description after alt=. -->
+<div class="photo-band">
+  <img src="https://images.unsplash.com/photo-1762427354051-a9bdb181ae3b?auto=format&amp;fit=crop&amp;q=70&amp;w=1600&amp;h=600"
+       srcset="https://images.unsplash.com/photo-1762427354051-a9bdb181ae3b?auto=format&amp;fit=crop&amp;q=70&amp;w=800&amp;h=300 800w,
+            https://images.unsplash.com/photo-1762427354051-a9bdb181ae3b?auto=format&amp;fit=crop&amp;q=70&amp;w=1200&amp;h=450 1200w,
+            https://images.unsplash.com/photo-1762427354051-a9bdb181ae3b?auto=format&amp;fit=crop&amp;q=70&amp;w=1600&amp;h=600 1600w,
+            https://images.unsplash.com/photo-1762427354051-a9bdb181ae3b?auto=format&amp;fit=crop&amp;q=70&amp;w=2400&amp;h=900 2400w"
+       sizes="100vw" width="1600" height="600"
+       alt="A desk with lever-arch files, a calculator, spectacles and printed charts">
+</div>
 
 <!-- ============ PRACTICE AREAS ============ -->
 <!-- To add an area, copy one whole "schedule-row" block. To add a line, copy one <li> line. -->
@@ -462,10 +485,21 @@ textarea { min-height: 130px; resize: vertical; }
     <div class="section-head">
       <h2>Careers</h2>
     </div>
+    <div class="careers-grid">
     <div class="prose">
       <!-- EDIT-EMAIL -->
       <p>To apply for articleship or a staff position, email your résumé to <a href="mailto:chelladurai@bcsandco.in?subject=Application">chelladurai@bcsandco.in</a> and name the position in the subject line.</p>
       <p>Shortlisted applicants are called for an interview at the office.</p>
+    </div>
+    <!-- "A desk with a calculator, papers, eyeglasses, and office supplies" by Berke Citak, from Unsplash (free licence). -->
+    <img class="inset-photo" loading="lazy" decoding="async"
+         src="https://images.unsplash.com/photo-1779729686198-117c1307894d?auto=format&amp;fit=crop&amp;q=70&amp;w=1040&amp;h=694"
+         srcset="https://images.unsplash.com/photo-1779729686198-117c1307894d?auto=format&amp;fit=crop&amp;q=70&amp;w=520&amp;h=347 520w,
+            https://images.unsplash.com/photo-1779729686198-117c1307894d?auto=format&amp;fit=crop&amp;q=70&amp;w=780&amp;h=520 780w,
+            https://images.unsplash.com/photo-1779729686198-117c1307894d?auto=format&amp;fit=crop&amp;q=70&amp;w=1040&amp;h=694 1040w,
+            https://images.unsplash.com/photo-1779729686198-117c1307894d?auto=format&amp;fit=crop&amp;q=70&amp;w=1560&amp;h=1040 1560w"
+         sizes="(max-width: 860px) 100vw, 520px" width="1040" height="694"
+         alt="A calculator, spectacles and printed charts on a desk">
     </div>
   </div>
 </section>
@@ -476,6 +510,16 @@ textarea { min-height: 130px; resize: vertical; }
     <div class="section-head">
       <h2>Contact</h2>
     </div>
+
+    <!-- "A view of a city from a high rise" (Chennai) by Danachezhian S, from Unsplash (free licence). -->
+    <img class="wide-photo" loading="lazy" decoding="async"
+         src="https://images.unsplash.com/photo-1640583016696-76213e8c3dd2?auto=format&amp;fit=crop&amp;q=70&amp;w=1600&amp;h=640"
+         srcset="https://images.unsplash.com/photo-1640583016696-76213e8c3dd2?auto=format&amp;fit=crop&amp;q=70&amp;w=800&amp;h=320 800w,
+            https://images.unsplash.com/photo-1640583016696-76213e8c3dd2?auto=format&amp;fit=crop&amp;q=70&amp;w=1200&amp;h=480 1200w,
+            https://images.unsplash.com/photo-1640583016696-76213e8c3dd2?auto=format&amp;fit=crop&amp;q=70&amp;w=1600&amp;h=640 1600w,
+            https://images.unsplash.com/photo-1640583016696-76213e8c3dd2?auto=format&amp;fit=crop&amp;q=70&amp;w=2240&amp;h=896 2240w"
+         sizes="(max-width: 1160px) 100vw, 1120px" width="1600" height="640"
+         alt="View over Chennai from a high-rise building">
 
     <div class="contact-grid">
       <dl class="facts">
