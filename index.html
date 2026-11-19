@@ -1,0 +1,650 @@
+<!DOCTYPE html>
+<html lang="en-IN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>B C S &amp; Co. Chartered Accountants</title>
+<meta name="description" content="B C S &amp; Co., Chartered Accountants, Anna Nagar East, Chennai. Firm particulars, practice areas, partners and contact details.">
+<link rel="canonical" href="https://bcsandco.in/">
+<!-- TEST PERIOD ONLY: the next line keeps search engines away while the site is on its test address.
+     Remove it on the day bcsandco.in is pointed to this site. -->
+<meta name="robots" content="noindex">
+<meta name="theme-color" content="#11253A">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23E6F0E8'/%3E%3Cpath d='M0 9h32M0 16h32M0 23h32' stroke='%23A9BFD2' stroke-width='1.5'/%3E%3Cpath d='M11 0v32M13.5 0v32' stroke='%23B33B3B' stroke-width='1'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anek+Latin:wdth,wght@75..125,100..800&amp;display=swap">
+
+<!--
+  HOW TO MAINTAIN THIS PAGE
+  The whole website is this one file.
+  1. To change any wording, search for the words as they appear on the page and edit them here.
+  2. Details that appear in more than one place carry a marker. Search for the marker and change every place it is found:
+       EDIT-PHONE    office and mobile numbers
+       EDIT-EMAIL    email address
+       EDIT-ADDRESS  office address
+       EDIT-HOURS    office hours
+  3. After every change, change the date marked EDIT-UPDATED in the footer.
+  4. Keep the wording factual. No slogans, no comparisons with other firms, no client names, no fees.
+-->
+
+<style>
+:root {
+  /* Layout idea: the firm's own document. Left-aligned text on cool paper;
+     the one bold element is a ruled ledger sheet that holds the firm's particulars. */
+  --paper: #F5F8F6;        /* page */
+  --sheet: #E6F0E8;        /* ledger paper green */
+  --ink: #11253A;          /* text, footer */
+  --muted: #485A6C;        /* secondary text */
+  --rule: #A9BFD2;         /* feint blue ruling */
+  --red: #B33B3B;          /* ledger margin rule */
+  --brand: #18598A;        /* firm blue: links and buttons */
+  --field: #FFFFFF;        /* form fields */
+  --on-ink: #DCE6EE;       /* text on ink */
+  --on-ink-muted: #B7C6D3;
+  --font: "Anek Latin", "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+  color-scheme: light;
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+
+html { -webkit-text-size-adjust: 100%; scroll-behavior: smooth; }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--font);
+  font-size: 1.0625rem;
+  line-height: 1.6;
+  font-variant-numeric: tabular-nums;
+}
+
+h1, h2, h3 { margin: 0; line-height: 1.12; font-stretch: 114%; text-wrap: balance; }
+h1 { font-size: clamp(2.1rem, 4.6vw, 3.3rem); font-weight: 640; letter-spacing: -0.012em; }
+h2 { font-size: clamp(1.65rem, 3vw, 2.15rem); font-weight: 620; }
+h3 { font-size: 1.3rem; font-weight: 620; }
+p { margin: 0; }
+
+a { color: var(--brand); text-underline-offset: 3px; }
+a:hover { color: var(--ink); }
+:focus-visible { outline: 3px solid var(--brand); outline-offset: 3px; }
+
+.wrap { width: min(1120px, 100% - 40px); margin-inline: auto; }
+
+.skip-link { position: absolute; left: 12px; top: -60px; background: var(--ink); color: var(--on-ink); padding: 10px 14px; z-index: 10; }
+.skip-link:focus { top: 12px; color: var(--on-ink); }
+
+/* Top strip */
+.topbar { background: var(--ink); color: var(--on-ink); font-size: 0.93rem; }
+.topbar .wrap { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 2px 28px; padding-block: 8px; }
+.topbar-contact { display: flex; flex-wrap: wrap; gap: 2px 26px; }
+.topbar a { color: inherit; text-decoration: none; }
+.topbar a:hover { color: inherit; text-decoration: underline; }
+
+/* Header */
+.site-header { border-bottom: 1px solid var(--rule); }
+.header-row { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 14px 32px; padding-block: 18px; }
+.firm { display: grid; text-decoration: none; color: var(--ink); line-height: 1.1; }
+.firm:hover { color: var(--ink); }
+.firm-name { font-size: 1.8rem; font-weight: 700; font-stretch: 120%; letter-spacing: 0.01em; }
+.firm-desc { font-size: 1rem; font-weight: 500; color: var(--muted); letter-spacing: 0.02em; }
+.site-nav { display: flex; flex-wrap: wrap; gap: 4px 28px; }
+.site-nav a { color: var(--ink); text-decoration: none; font-weight: 520; padding: 6px 0; border-bottom: 2px solid transparent; }
+.site-nav a:hover { border-bottom-color: var(--red); }
+.menu-button { display: none; font: inherit; font-weight: 600; color: var(--ink); background: transparent; border: 2px solid var(--ink); border-radius: 3px; padding: 8px 16px; cursor: pointer; }
+
+/* Hero */
+.hero { padding-block: clamp(40px, 7vw, 88px); }
+.hero-grid { display: grid; grid-template-columns: minmax(0, 1.08fr) minmax(0, 0.92fr); gap: clamp(30px, 5vw, 72px); align-items: center; }
+.lead { margin-top: 20px; font-size: 1.2rem; line-height: 1.55; max-width: 33em; }
+.actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 30px; }
+.button { display: inline-flex; align-items: center; justify-content: center; font: inherit; font-weight: 600; padding: 11px 20px; background: var(--brand); color: var(--field); border: 2px solid var(--brand); border-radius: 3px; text-decoration: none; cursor: pointer; }
+.button:hover { background: var(--ink); border-color: var(--ink); color: var(--field); }
+.button-quiet { background: transparent; color: var(--brand); }
+.button-quiet:hover { background: transparent; color: var(--ink); border-color: var(--ink); }
+
+/* Ledger sheet: firm particulars */
+.ledger { background: var(--sheet); border: 1px solid var(--rule); box-shadow: 0 26px 48px -34px rgba(17, 37, 58, 0.6); }
+.ledger table { width: 100%; border-collapse: separate; border-spacing: 0; table-layout: fixed; }
+.ledger .col-label { width: 44%; }
+.ledger caption { caption-side: top; text-align: left; padding: 16px 20px 12px; font-size: 1.15rem; font-weight: 640; font-stretch: 114%; border-bottom: 2px solid var(--ink); }
+.ledger th, .ledger td { padding: 11px 20px; text-align: left; vertical-align: top; border-bottom: 1px solid var(--rule); overflow-wrap: anywhere; }
+.ledger thead th { padding-block: 8px; font-size: 0.88rem; font-weight: 600; color: var(--muted); }
+.ledger tbody th { font-weight: 480; color: var(--muted); }
+.ledger td, .ledger thead th + th { border-left: 3px double var(--red); }
+.ledger td { font-weight: 580; }
+.ledger tbody tr:last-child th, .ledger tbody tr:last-child td { border-bottom: 0; }
+
+/* Sections */
+.section { padding-block: clamp(44px, 6vw, 80px); border-top: 1px solid var(--rule); }
+.section-head { display: grid; gap: 10px; max-width: 44em; margin-bottom: 28px; }
+.section-head p { color: var(--muted); }
+
+/* Practice areas, set like schedules to a statement */
+.schedule { margin: 0; }
+.schedule-row { display: grid; grid-template-columns: minmax(0, 3fr) minmax(0, 7fr); gap: 10px 44px; padding-block: 22px; border-top: 1px solid var(--rule); }
+.schedule-row:last-child { border-bottom: 1px solid var(--rule); }
+.schedule dt { font-size: 1.24rem; font-weight: 620; font-stretch: 112%; line-height: 1.2; }
+.schedule dd { margin: 0; }
+.schedule ul { margin: 0; padding: 0; list-style: none; columns: 2; column-gap: 40px; }
+.schedule li { position: relative; padding-left: 18px; margin-bottom: 6px; break-inside: avoid; }
+.schedule li::before { content: ""; position: absolute; left: 0; top: 0.62em; width: 7px; height: 7px; background: var(--brand); }
+
+/* Two-column fact rows with the ledger margin rule */
+.facts { margin: 0; border-top: 2px solid var(--ink); }
+.facts > div { display: grid; grid-template-columns: minmax(0, 38%) minmax(0, 1fr); border-bottom: 1px solid var(--rule); }
+.facts dt { padding: 9px 14px 9px 0; color: var(--muted); }
+.facts dd { margin: 0; padding: 9px 0 9px 14px; border-left: 3px double var(--red); font-weight: 540; overflow-wrap: anywhere; }
+.facts dd span { display: block; }
+
+/* Partners */
+.partners { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 44px clamp(30px, 5vw, 64px); }
+.partner { display: grid; gap: 14px; align-content: start; }
+.partner-role { color: var(--muted); font-weight: 520; margin-top: -8px; }
+.partner p { max-width: 36em; }
+
+/* Official portals */
+.portal-groups { display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 30px 44px; }
+.portal-groups h3 { font-size: 1.1rem; margin-bottom: 10px; }
+.portal-groups ul { margin: 0; padding: 0; list-style: none; display: grid; gap: 7px; }
+
+/* Careers */
+.prose { display: grid; gap: 14px; max-width: 40em; }
+
+/* Contact */
+.contact-grid { display: grid; grid-template-columns: minmax(0, 5fr) minmax(0, 6fr); gap: 44px clamp(30px, 5vw, 72px); align-items: start; }
+.enquiry { display: grid; gap: 16px; }
+.enquiry form { display: grid; gap: 14px; }
+.field { display: grid; gap: 5px; }
+.field-pair { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px; }
+label { font-weight: 560; font-size: 0.98rem; }
+input, select, textarea { width: 100%; font: inherit; color: var(--ink); background: var(--field); border: 1px solid var(--muted); border-radius: 3px; padding: 10px 12px; }
+textarea { min-height: 130px; resize: vertical; }
+.form-note { color: var(--muted); font-size: 0.96rem; }
+.enquiry .button { justify-self: start; }
+
+/* Footer */
+.site-footer { background: var(--ink); color: var(--on-ink); padding-block: 46px 26px; font-size: 0.97rem; }
+.site-footer a { color: var(--field); }
+.site-footer a:hover { color: var(--on-ink); }
+.footer-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 30px 52px; }
+.footer-grid h2 { font-size: 1.05rem; font-weight: 620; margin-bottom: 10px; }
+.footer-grid ul { margin: 0; padding: 0; list-style: none; display: grid; gap: 5px; }
+.footer-firm { font-size: 1.3rem; font-weight: 700; font-stretch: 118%; line-height: 1.15; }
+.footer-note { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 6px 30px; margin-top: 32px; padding-top: 18px; border-top: 1px solid var(--muted); color: var(--on-ink-muted); }
+
+/* Narrow screens */
+@media (max-width: 860px) {
+  .hero-grid, .partners, .contact-grid { grid-template-columns: minmax(0, 1fr); }
+}
+@media (max-width: 760px) {
+  .menu-button { display: inline-flex; }
+  .site-nav { display: none; width: 100%; flex-direction: column; gap: 0; border-top: 1px solid var(--rule); }
+  .site-nav.is-open { display: flex; }
+  .site-nav a { padding: 12px 0; border-bottom: 1px solid var(--rule); }
+  .schedule-row { grid-template-columns: minmax(0, 1fr); }
+  .schedule ul { columns: 1; }
+}
+@media (max-width: 480px) {
+  .wrap { width: min(1120px, 100% - 32px); }
+  .ledger th, .ledger td, .ledger caption { padding-inline: 14px; }
+  .field-pair { grid-template-columns: minmax(0, 1fr); }
+  .facts > div { grid-template-columns: minmax(0, 33%) minmax(0, 1fr); }
+  .facts dt { padding-right: 10px; }
+  .facts dd { padding-left: 10px; }
+}
+</style>
+</head>
+
+<body>
+<a class="skip-link" href="#main">Skip to the main content</a>
+
+<!-- ============ TOP STRIP ============ -->
+<div class="topbar">
+  <div class="wrap">
+    <span>Anna Nagar East, Chennai</span>
+    <span class="topbar-contact">
+      <!-- EDIT-PHONE -->
+      <a href="tel:+914446160558">Office 044 4616 0558</a>
+      <!-- EDIT-EMAIL -->
+      <a href="mailto:chelladurai@bcsandco.in">chelladurai@bcsandco.in</a>
+    </span>
+  </div>
+</div>
+
+<!-- ============ HEADER ============ -->
+<!-- The CA India logo goes to the left of the firm name. Use ICAI's own file, unaltered, on a white background. -->
+<header class="site-header">
+  <div class="wrap header-row">
+    <a class="firm" href="#top">
+      <span class="firm-name">B C S &amp; Co.</span>
+      <span class="firm-desc">Chartered Accountants</span>
+    </a>
+    <button class="menu-button" id="menu-button" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
+    <nav class="site-nav" id="site-nav" aria-label="Sections of this page">
+      <a href="#practice">Practice areas</a>
+      <a href="#partners">Partners</a>
+      <a href="#portals">Official portals</a>
+      <a href="#careers">Careers</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+<!-- ============ OPENING: WHO THE FIRM IS ============ -->
+<section class="hero" id="top">
+  <div class="wrap hero-grid">
+    <div>
+      <h1>Chartered Accountants in Anna Nagar, Chennai</h1>
+      <p class="lead">B C S &amp; Co. is a firm of Chartered Accountants established in 2016. Its two partners and their staff carry out audit, income tax, GST, company law and accounting work for companies, firms, trusts and individuals.</p>
+      <div class="actions">
+        <a class="button" href="#practice">See practice areas</a>
+        <a class="button button-quiet" href="#contact">Contact the office</a>
+      </div>
+    </div>
+
+    <!-- These particulars must agree with the firm's records at ICAI. -->
+    <div class="ledger">
+      <table>
+        <caption>Firm particulars</caption>
+        <colgroup><col class="col-label"><col></colgroup>
+        <thead>
+          <tr><th scope="col">Particulars</th><th scope="col">Details</th></tr>
+        </thead>
+        <tbody>
+          <tr><th scope="row">Name of the firm</th><td>B C S &amp; Co.</td></tr>
+          <tr><th scope="row">Constitution</th><td>Partnership firm of Chartered Accountants</td></tr>
+          <tr><th scope="row">ICAI Firm Registration No.</th><td>016348S</td></tr>
+          <tr><th scope="row">Established</th><td>2016</td></tr>
+          <tr><th scope="row">Partners</th><td>2</td></tr>
+          <tr><th scope="row">Office</th><td>Anna Nagar East, Chennai 600 102</td></tr>
+          <!-- EDIT-HOURS -->
+          <tr><th scope="row">Office hours</th><td>Monday to Saturday, 9 am to 7 pm</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PRACTICE AREAS ============ -->
+<!-- To add an area, copy one whole "schedule-row" block. To add a line, copy one <li> line. -->
+<section class="section" id="practice">
+  <div class="wrap">
+    <div class="section-head">
+      <h2>Practice areas</h2>
+      <p>The work the firm takes up, listed by area.</p>
+    </div>
+
+    <dl class="schedule">
+      <div class="schedule-row">
+        <dt>Audit and assurance</dt>
+        <dd><ul>
+          <li>Statutory audits under the Companies Act and other laws</li>
+          <li>Tax audits under the income-tax law</li>
+          <li>Internal audits of corporate and non-corporate entities</li>
+          <li>Management and operational audits</li>
+          <li>Risk assurance and advisory</li>
+          <li>Physical verification of inventory and assets</li>
+        </ul></dd>
+      </div>
+
+      <div class="schedule-row">
+        <dt>Audits of banks and financial institutions</dt>
+        <dd><ul>
+          <li>Concurrent audits</li>
+          <li>Statutory branch audits</li>
+          <li>Revenue audits</li>
+          <li>Stock audits</li>
+          <li>Systems audits</li>
+          <li>Credit appraisal and financial analysis</li>
+          <li>Compliance checks and verification</li>
+        </ul></dd>
+      </div>
+
+      <div class="schedule-row">
+        <dt>Income tax</dt>
+        <dd><ul>
+          <li>Income-tax returns for individuals, firms, companies and trusts</li>
+          <li>Tax audit reports and certificates</li>
+          <li>TDS and TCS statements</li>
+          <li>Tax compliance, advice and planning</li>
+          <li>Representation in assessments and appeals before tax authorities</li>
+        </ul></dd>
+      </div>
+
+      <div class="schedule-row">
+        <dt>GST</dt>
+        <dd><ul>
+          <li>Registration and amendments</li>
+          <li>Monthly, quarterly and annual returns</li>
+          <li>Annual return and reconciliation statement</li>
+          <li>Refund applications</li>
+          <li>Replies to notices, assessments and appeals</li>
+          <li>Opinions on GST matters</li>
+        </ul></dd>
+      </div>
+
+      <div class="schedule-row">
+        <dt>Company law</dt>
+        <dd><ul>
+          <li>Formation of companies and LLPs</li>
+          <li>Annual filings with the Registrar of Companies</li>
+          <li>Records, registers and books required under the Companies Act, 2013</li>
+          <li>Compliances of listed companies</li>
+          <li>Liaison with SEBI, the Registrar of Companies and stock exchanges</li>
+          <li>Deeds and documentation</li>
+        </ul></dd>
+      </div>
+
+      <div class="schedule-row">
+        <dt>Accounting and bookkeeping</dt>
+        <dd><ul>
+          <li>Bookkeeping and maintenance of statutory records</li>
+          <li>Finalisation of accounts</li>
+          <li>MIS reports</li>
+          <li>Design of accounting systems and internal controls</li>
+        </ul></dd>
+      </div>
+
+      <div class="schedule-row">
+        <dt>Project finance</dt>
+        <dd><ul>
+          <li>Feasibility reports and project appraisal</li>
+          <li>Working capital finance proposals</li>
+          <li>Short-term and long-term fund arrangements</li>
+          <li>Syndication of equity and term loans</li>
+          <li>Liaison with financial institutions</li>
+        </ul></dd>
+      </div>
+
+      <div class="schedule-row">
+        <dt>Due diligence and forensic accounting</dt>
+        <dd><ul>
+          <li>Due diligence reviews</li>
+          <li>Fraud investigation</li>
+          <li>Dispute-related financial analysis</li>
+        </ul></dd>
+      </div>
+    </dl>
+  </div>
+</section>
+
+<!-- ============ PARTNERS ============ -->
+<!-- A passport-size photograph of each partner may be added above the name. -->
+<section class="section" id="partners">
+  <div class="wrap">
+    <div class="section-head">
+      <h2>Partners</h2>
+      <p>Both partners are members of the Institute of Chartered Accountants of India.</p>
+    </div>
+
+    <div class="partners">
+      <article class="partner">
+        <h3>Chelladurai B</h3>
+        <p class="partner-role">Founder and Managing Partner</p>
+        <dl class="facts">
+          <div><dt>Qualifications</dt><dd>B.Com., FCA, Company Secretary</dd></div>
+          <div><dt>Member of ICAI since</dt><dd>2012</dd></div>
+          <div><dt>Areas of practice</dt><dd>Direct and indirect taxation, company law matters</dd></div>
+        </dl>
+        <p>Chelladurai B has been a member of the Institute of Chartered Accountants of India since 2012 and is a Fellow member. He is also a member of the Institute of Company Secretaries of India, has completed the Intermediate course in Cost and Management Accountancy, and is a commerce graduate of Vivekananda College.</p>
+        <p>He worked in direct taxation at Aircel Limited from 2012 to 2014, then in taxation at the Archean Group, and later as Head of Accounts at Stellar Plastics India Private Limited. He began practice as B C S &amp; Co. in 2016.</p>
+        <p>He holds certifications in Forensic Accounting and Fraud Detection, Advanced Goods and Services Tax, Concurrent Audit of Banks, and Public Finance and Accounting.</p>
+        <p><a href="https://www.linkedin.com/in/chelladurai-bose-2b51b763/" rel="noopener">LinkedIn profile of Chelladurai B</a></p>
+      </article>
+
+      <article class="partner">
+        <h3>Puviarasan P</h3>
+        <p class="partner-role">Partner</p>
+        <dl class="facts">
+          <div><dt>Qualifications</dt><dd>B.Com., ACA</dd></div>
+          <div><dt>Partner since</dt><dd>2019</dd></div>
+          <div><dt>Areas of practice</dt><dd>Internal audit and statutory audit</dd></div>
+        </dl>
+        <p>Puviarasan P is an Associate member of the Institute of Chartered Accountants of India and a commerce graduate of Loyola College. He joined the firm as a full-time partner in 2019.</p>
+        <p>His work covers statutory audits, internal audits and tax audits.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ OFFICIAL PORTALS ============ -->
+<section class="section" id="portals">
+  <div class="wrap">
+    <div class="section-head">
+      <h2>Official portals</h2>
+      <p>Government and regulator websites used for filings and payments. Each link opens the official site.</p>
+    </div>
+
+    <div class="portal-groups">
+      <div>
+        <h3>Income tax</h3>
+        <ul>
+          <li><a href="https://www.incometax.gov.in/" rel="noopener">Income Tax e-filing portal</a></li>
+          <li><a href="https://www.tdscpc.gov.in/" rel="noopener">TRACES for TDS and TCS</a></li>
+          <li><a href="https://incometaxindia.gov.in/" rel="noopener">Income Tax Department</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>GST and customs</h3>
+        <ul>
+          <li><a href="https://www.gst.gov.in/" rel="noopener">GST portal</a></li>
+          <li><a href="https://ewaybillgst.gov.in/" rel="noopener">E-way bill system</a></li>
+          <li><a href="https://www.cbic.gov.in/" rel="noopener">Central Board of Indirect Taxes and Customs</a></li>
+          <li><a href="https://ctd.tn.gov.in/" rel="noopener">Tamil Nadu Commercial Taxes Department</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Company and labour law</h3>
+        <ul>
+          <li><a href="https://www.mca.gov.in/" rel="noopener">Ministry of Corporate Affairs</a></li>
+          <li><a href="https://www.epfindia.gov.in/" rel="noopener">Employees' Provident Fund Organisation</a></li>
+          <li><a href="https://www.esic.gov.in/" rel="noopener">Employees' State Insurance Corporation</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>The profession</h3>
+        <ul>
+          <li><a href="https://www.icai.org/" rel="noopener">Institute of Chartered Accountants of India</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CAREERS ============ -->
+<section class="section" id="careers">
+  <div class="wrap">
+    <div class="section-head">
+      <h2>Careers</h2>
+    </div>
+    <div class="prose">
+      <!-- EDIT-EMAIL -->
+      <p>To apply for articleship or a staff position, email your résumé to <a href="mailto:chelladurai@bcsandco.in?subject=Application">chelladurai@bcsandco.in</a> and name the position in the subject line.</p>
+      <p>Shortlisted applicants are called for an interview at the office.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CONTACT ============ -->
+<section class="section" id="contact">
+  <div class="wrap">
+    <div class="section-head">
+      <h2>Contact</h2>
+    </div>
+
+    <div class="contact-grid">
+      <dl class="facts">
+        <!-- EDIT-ADDRESS -->
+        <div><dt>Office</dt><dd>
+          <span>No. 67/125, Second Floor, G Block, 1st Avenue,</span>
+          <span>Anna Nagar East, Chennai 600 102</span>
+          <span><a href="https://www.google.com/maps/search/?api=1&amp;query=B+C+S+%26+Co+Chartered+Accountants+1st+Avenue+Anna+Nagar+East+Chennai+600102" rel="noopener">Open in Google Maps</a></span>
+        </dd></div>
+        <!-- EDIT-PHONE -->
+        <div><dt>Office phone</dt><dd><a href="tel:+914446160558">044 4616 0558</a></dd></div>
+        <div><dt>Mobile</dt><dd>
+          <span><a href="tel:+919941660234">99416 60234</a></span>
+          <span><a href="tel:+919940445065">99404 45065</a></span>
+        </dd></div>
+        <div><dt>WhatsApp</dt><dd><a href="https://wa.me/919941660234" rel="noopener">99416 60234</a></dd></div>
+        <!-- EDIT-EMAIL -->
+        <div><dt>Email</dt><dd><a href="mailto:chelladurai@bcsandco.in">chelladurai@bcsandco.in</a></dd></div>
+        <!-- EDIT-HOURS -->
+        <div><dt>Office hours</dt><dd>Monday to Saturday, 9 am to 7 pm</dd></div>
+        <div><dt>Facebook</dt><dd><a href="https://www.facebook.com/bcsco1/" rel="noopener">facebook.com/bcsco1</a></dd></div>
+      </dl>
+
+      <div class="enquiry">
+        <h3>Write to the office</h3>
+        <form id="enquiry-form">
+          <div class="field-pair">
+            <div class="field">
+              <label for="enquiry-name">Your name</label>
+              <input id="enquiry-name" name="name" type="text" autocomplete="name" required>
+            </div>
+            <div class="field">
+              <label for="enquiry-phone">Phone number</label>
+              <input id="enquiry-phone" name="phone" type="tel" autocomplete="tel" required>
+            </div>
+          </div>
+          <div class="field-pair">
+            <div class="field">
+              <label for="enquiry-email">Email (optional)</label>
+              <input id="enquiry-email" name="email" type="email" autocomplete="email">
+            </div>
+            <div class="field">
+              <label for="enquiry-about">Your message is about</label>
+              <select id="enquiry-about" name="about">
+                <option>Audit</option>
+                <option>Income tax</option>
+                <option>GST</option>
+                <option>Company law</option>
+                <option>Accounting</option>
+                <option>Careers</option>
+                <option>Something else</option>
+              </select>
+            </div>
+          </div>
+          <div class="field">
+            <label for="enquiry-message">Message</label>
+            <textarea id="enquiry-message" name="message" required></textarea>
+          </div>
+          <button class="button" type="submit">Open as an email</button>
+          <p class="form-note" id="enquiry-status" role="status">This opens your email app with the message filled in. Nothing is sent until you press Send there.</p>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <p class="footer-firm">B C S &amp; Co.</p>
+        <p>Chartered Accountants</p>
+        <p>ICAI Firm Registration No. 016348S</p>
+        <!-- EDIT-ADDRESS -->
+        <p>No. 67/125, Second Floor, G Block, 1st Avenue, Anna Nagar East, Chennai 600 102</p>
+      </div>
+      <div>
+        <h2>On this page</h2>
+        <ul>
+          <li><a href="#practice">Practice areas</a></li>
+          <li><a href="#partners">Partners</a></li>
+          <li><a href="#portals">Official portals</a></li>
+          <li><a href="#careers">Careers</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2>About this website</h2>
+        <p>This website gives general information about the firm to those who look for it. It is not an advertisement or a solicitation of work. Nothing here is professional advice; please consult the firm before acting on any matter.</p>
+      </div>
+    </div>
+    <div class="footer-note">
+      <span>© 2026 B C S &amp; Co., Chartered Accountants</span>
+      <!-- EDIT-UPDATED -->
+      <span>Updated on 19 November 2026</span>
+    </div>
+  </div>
+</footer>
+
+<!-- Details for search engines. EDIT-PHONE, EDIT-EMAIL, EDIT-ADDRESS, EDIT-HOURS apply here too. -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "AccountingService",
+  "name": "B C S & Co., Chartered Accountants",
+  "url": "https://bcsandco.in/",
+  "telephone": "+91-44-46160558",
+  "email": "chelladurai@bcsandco.in",
+  "foundingDate": "2016",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "No. 67/125, Second Floor, G Block, 1st Avenue, Anna Nagar East",
+    "addressLocality": "Chennai",
+    "addressRegion": "Tamil Nadu",
+    "postalCode": "600102",
+    "addressCountry": "IN"
+  },
+  "openingHours": "Mo-Sa 09:00-19:00"
+}
+</script>
+
+<script>
+(function () {
+  // EDIT-EMAIL: the address the enquiry form writes to
+  var FIRM_EMAIL = 'chelladurai@bcsandco.in';
+
+  // Menu button on phones
+  var menuButton = document.getElementById('menu-button');
+  var nav = document.getElementById('site-nav');
+  menuButton.addEventListener('click', function () {
+    var open = nav.classList.toggle('is-open');
+    menuButton.setAttribute('aria-expanded', open ? 'true' : 'false');
+  });
+  nav.addEventListener('click', function (event) {
+    if (event.target.tagName === 'A') {
+      nav.classList.remove('is-open');
+      menuButton.setAttribute('aria-expanded', 'false');
+    }
+  });
+
+  // Enquiry form: puts the message into the visitor's own email app
+  var form = document.getElementById('enquiry-form');
+  var status = document.getElementById('enquiry-status');
+  form.addEventListener('submit', function (event) {
+    event.preventDefault();
+    var name = form.elements['name'].value.trim();
+    var phone = form.elements['phone'].value.trim();
+    var email = form.elements['email'].value.trim();
+    var about = form.elements['about'].value;
+    var message = form.elements['message'].value.trim();
+
+    var lines = [message, '', name, 'Phone: ' + phone];
+    if (email) { lines.push('Email: ' + email); }
+
+    var link = document.createElement('a');
+    link.href = 'mailto:' + FIRM_EMAIL +
+      '?subject=' + encodeURIComponent('Message about ' + about) +
+      '&body=' + encodeURIComponent(lines.join('\n'));
+    link.style.display = 'none';
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+
+    status.textContent = 'Your email app should now show this message. It reaches the firm only when you press Send there. If no app opened, write to ' + FIRM_EMAIL + ' or call the office.';
+  });
+})();
+</script>
+</body>
+</html>
